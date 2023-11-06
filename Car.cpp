@@ -45,11 +45,12 @@ string Car::GetSeatUpholstery() {
 };
 
 void Car::Show() {
-	cout << "Weight: " << weight << endl;
-	cout << "Max Speed: " << max_speed << endl;
-	cout << "Average Speed: " << average_speed << endl;
-	cout << "Cost Travel: " << cost_travel << endl;
-	cout << "Max Luggage: " << max_luggage << endl;
+	cout << "\tCAR" << endl << endl;
+	cout << "Weight: " << weight << " kg" << endl;
+	cout << "Max Speed: " << max_speed << " km/h" << endl;
+	cout << "Average Speed: " << average_speed << " km/h" << endl;
+	cout << "Cost Travel: " << cost_travel << "$" << endl;
+	cout << "Max Luggage: " << max_luggage << " kg" << endl;
 	cout << "Segment: " << segment << endl;
 	cout << "Body Type: " << body_type << endl;
 	cout << "Passengers Count: " << passengers_count << endl;

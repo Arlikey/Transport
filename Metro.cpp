@@ -23,10 +23,11 @@ int Metro::GetPassengersCount() {
 };
 
 void Metro::Show() {
-	cout << "Weight: " << weight << endl;
-	cout << "Max Speed: " << max_speed << endl;
-	cout << "Average Speed: " << average_speed << endl;
-	cout << "Cost Travel: " << cost_travel << endl;
+	cout << "\tMETRO" << endl << endl;
+	cout << "Weight: " << weight << " kg" << endl;
+	cout << "Max Speed: " << max_speed  << " km/h" << endl;
+	cout << "Average Speed: " << average_speed << " km/h" << endl;
+	cout << "Cost Travel: " << cost_travel << "$" << endl;
 	cout << "Number Of Wagons: " << number_of_wagons << endl;
 	cout << "Passengers Count: " << passengers_count << endl;
 };

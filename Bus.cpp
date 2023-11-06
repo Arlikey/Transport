@@ -45,15 +45,16 @@ int Bus::GetQualityOfSeats() {
 };
 
 void Bus::Show() {
-	cout << "Weight: " << weight << endl;
-	cout << "Max Speed: " << max_speed << endl;
-	cout << "Average Speed: " << average_speed << endl;
-	cout << "Cost Travel: " << cost_travel << endl;
+	cout << "\tBUS" << endl << endl;
+	cout << "Weight: " << weight << " kg" << endl;
+	cout << "Max Speed: " << max_speed << " km/h" << endl;
+	cout << "Average Speed: " << average_speed << " km/h" << endl;
+	cout << "Cost Travel: " << cost_travel << "$" << endl;
 	cout << "Passengers Count: " << passengers_count << endl;
 	cout << "Have Conditioner: " << is_have_conditioner << endl;
 	cout << "Have Recliners: " << is_have_recliners << endl;
 	cout << "Quality of seats: " << quality_of_seats << endl;
-	cout << "Max Luggage By Passenger: " << max_luggage_by_passenger << endl;
+	cout << "Max Luggage By Passenger: " << max_luggage_by_passenger << " kg" << endl;
 };
 
 void Bus::Comfort() {
