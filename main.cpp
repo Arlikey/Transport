@@ -10,10 +10,12 @@ int main() {
 
 	const int countOfTransport = 4;
 
-	Transport* transport[countOfTransport] = {new Car(1250, 180, 60, 1500, 25, 3), 
+	Transport* transport[countOfTransport] = {
+		new Car(1250, 180, 60, 1500, 25, 3), 
 		new Bus(3000, 140, 50, 750, 10, 25), 
 		new Metro(12500, 80, 60, 50, 6, 300), 
-		new Train(14000, 160, 140, 300, 8, 450)};
+		new Train(14000, 160, 140, 300, 8, 450)
+	};
 
 	int summa;
 	cout << "Enter your summa: ";
@@ -50,6 +52,11 @@ int main() {
 
 	cout << "You arrived to destination." << endl;
 	cout << "Left summa: " << summa - transport[userChoice-1]->GetCostTravel() * (distance / 100) << endl;
+
+	for (size_t i = 0; i < countOfTransport; i++)
+	{
+		delete transport[i];
+	}
 
 	return 0;
 }
